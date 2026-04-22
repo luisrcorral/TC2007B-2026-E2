@@ -52,6 +52,8 @@ class receivedParamViewModel : ViewModel() {
 fun Greeting2(myViewModel: receivedParamViewModel, name: String, modifier: Modifier = Modifier) {
 
     val myContext = LocalContext.current as? ComponentActivity
+    //Get Extra is not overloaded, you require to express the type of the data
+
     myViewModel.p_uname = myContext?.intent?.getStringExtra("uname")?: "No data"
     myViewModel.p_ulname = myContext?.intent?.getStringExtra("ulname")?: "No data"
     Column(modifier = modifier) {

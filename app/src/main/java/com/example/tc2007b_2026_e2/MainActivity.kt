@@ -48,6 +48,8 @@ class paramViewModel : ViewModel() {
 
 @Composable
 fun Greeting(viewModel: paramViewModel, modifier: Modifier = Modifier) {
+
+    //Column sorts your views vertically.
     Column(modifier = modifier) {
         Text(
             text = "Write your name"
